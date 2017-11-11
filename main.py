@@ -1,4 +1,5 @@
 from flask import Flask
+from caesar import rotate_string
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -17,11 +18,11 @@ main_html = """
                 font: 16px sans-serif;
                 border-radius: 10px;
             }
-            textarea {
+            textarea {{
                 margin: 10px 0;
                 width: 540px;
                 height: 120px;
-            }
+            }}
         </style>
     </head>
     <body>
